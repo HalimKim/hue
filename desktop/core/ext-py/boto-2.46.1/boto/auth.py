@@ -686,6 +686,8 @@ class S3HmacAuthV4Handler(HmacAuthV4Handler, AuthHandler):
                     elif part.startswith('s3-'):
                         region_name = self.clean_region_name(part)
                         break
+                    else
+                        region_name = 'us-east-1'
 
         return region_name
 
